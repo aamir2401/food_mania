@@ -1,5 +1,4 @@
-<<<<<<< HEAD
- HEAD
+
 # food_mania
 <h1>React Repo...🚀</h1>
 Our app offers a seamless and convenient experience for ordering food from a wide variety of restaurants in your city. With a user-friendly interface and a vast selection of cuisines, you'll find something to satisfy every craving.
