@@ -199,3 +199,13 @@ Commit your changes: git commit -m 'Add some feature'.
 Push to the branch: git push origin feature/YourFeatureName.
 Open a Pull Request
 >>>>>>> e2cadf6b32ef8bb91e1df1ac5bdfb84ed3a862c4
+
+
+# Redux
+ 
+Install @reduxjs/toolkit and react-redux
+Build our store
+Connect our store to our app
+Slice (cartSlice)
+dispatch(action)
+Selector

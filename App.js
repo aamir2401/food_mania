@@ -11,6 +11,8 @@ import Cart from "./src/components/Cart.js";
 import RestaurantMenu from "./src/components/RestaurantMenu.js";
 const Grocery = lazy(() => import("./src/components/Grocery.js"))
 import './index.css'
+import { Provider } from "react-redux";
+import appStore from "./src/utils/appStore.js";
 //chunking
 //code splitting
 //dynamic bundling
@@ -20,10 +22,12 @@ import './index.css'
 const AppLayout = () =>
 {
   return(
+    <Provider store={appStore}>
     <div className="app-layout">
       <Header />
       <Outlet />
     </div>
+    </Provider>
   )
 }
 const appRouter = createBrowserRouter([
