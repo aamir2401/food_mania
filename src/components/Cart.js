@@ -1,9 +1,20 @@
-import React from 'react'
 
+import React from 'react';
+import { useSelector } from 'react-redux';
+import CartItems from './cartItems'; 
 const Cart = () => {
-  return (
-    <div>This is cart page...</div>
-  )
-}
+  const cartItems = useSelector((store) => store.cart.items);
 
-export default Cart
+  return (
+    <div className='h-auto m-4 w-auto text-center font-serif text-xl p-6 bg-gradient-to-r from-blue-50 to-slate-100'>
+      This is the cart page...
+      {cartItems.length > 0 ? (
+        <CartItems items={cartItems} />
+      ) : (
+        <p>Your cart is empty</p>
+      )}
+    </div>
+  );
+};
+
+export default Cart;
