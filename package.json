@@ -16,6 +16,10 @@
     "shimmer": "^1.2.1"
   },
   "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
   "targets": {
     "main": false,
     "browser": {
